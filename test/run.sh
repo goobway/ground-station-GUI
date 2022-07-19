@@ -9,7 +9,7 @@ text="  _   _ __  __    _    ____ ____    ____   ___   ____ _  _______ _____   _
 
 printf "${text}\n\n"
 printf "UNIVERSITY OF MASSACHUSETTS AMHERST\n"
-printf "PAYLAOD SUB TEAM, GROUND STATION\n\n"
+printf "PAYLOAD SUB TEAM, GROUND STATION\n\n"
 printf "Loading Python script...\n\n"
 
 python3 program.py
