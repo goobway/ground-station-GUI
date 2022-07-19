@@ -12,5 +12,5 @@ printf "UNIVERSITY OF MASSACHUSETTS AMHERST\n"
 printf "PAYLOAD SUB TEAM, GROUND STATION\n\n"
 printf "Loading Python script...\n\n"
 
-python3 program.py
+python3 script.py
 
