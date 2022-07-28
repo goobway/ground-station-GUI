@@ -15,8 +15,8 @@ root.title("Ground Station")
 
 # Program Counter
 counter = 0
-counter_label = Label(root, width = 30, bg = '#ffffff')
-counter_label.place(relx = 1.0, rely = 1.0, anchor='se')
+counter_label = Label(root, width=20, bg='#ffffff')
+counter_label.place(relx=1.0, rely=1.0, anchor='se')
 
 def program_counter():
     global counter
@@ -25,16 +25,16 @@ def program_counter():
     minutes = (counter // 60) % 60
     hours = (counter // (60 * 60)) % (60 * 60)
 
-    dt = time(second = seconds, minute = minutes, hour = hours)
-    string = dt.isoformat(timespec = 'auto')
+    dt = time(second=seconds, minute=minutes, hour=hours)
+    string = dt.isoformat(timespec='auto')
     display = string
 
-    counter_label.config(text = "T+//" + display)
+    counter_label.config(text="T+//"+display)
     counter += 1
     
     root.after(1000, program_counter)  # loop counter
 
-
+# Main Functions
 program_counter()
 
 # Execute Tkinter
